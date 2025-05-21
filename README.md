@@ -1,1 +1,1 @@
-nety y menya reame
+nety y menya reade
