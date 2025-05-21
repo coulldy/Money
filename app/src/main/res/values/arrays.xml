@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transaction_types">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string-array name="expense_categories">
+        <item>Еда</item>
+        <item>Транспорт</item>
+        <item>Жилье</item>
+        <item>Развлечения</item>
+        <item>Здоровье</item>
+    </string-array>
+
+</resources>

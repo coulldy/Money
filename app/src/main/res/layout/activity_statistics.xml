@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_margin="16dp" />
+
+    <Spinner
+        android:id="@+id/categoryFilterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/statsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/incomeSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сводка доходов"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:paddingBottom="8dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/incomePieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/incomeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Доходы по категориям"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvIncomeTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/expenseSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сводка расходов"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/expensePieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/expenseHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расходы по категориям"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvExpenseTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
